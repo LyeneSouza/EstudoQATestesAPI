@@ -33,7 +33,7 @@ APIS públicas sugeridas:
 
 ### Instruções para Realização do Desafio ###
 1. Faça um *fork* desse repositório para a sua conta
-2. Crie a documentação necessária conforme solicitado
+2. Implemente a sua solução conforme solicitado
 3. Compartilhe o link do projeto com o seu mentor 
 
 ***
