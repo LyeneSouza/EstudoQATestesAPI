@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "b42b2723-37f3-44a5-8c77-0478790b9890",
 		"name": "Fake REST API",
+		"description": "Coleção criada para testar a Fake REST API.\n\nResultado esperado para todos os testes:\n\n- Tempo de resposta inferior a 5 segundos.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "24462390"
 	},
@@ -57,7 +58,8 @@
 									"path": [
 										"{{activities}}"
 									]
-								}
+								},
+								"description": "Deve criar uma nova atividade com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema da Activity."
 							},
 							"response": []
 						},
@@ -95,11 +97,13 @@
 									"path": [
 										"{{activities}}"
 									]
-								}
+								},
+								"description": "Não deve permitir criar uma nova atividade sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo POST."
 				},
 				{
 					"name": "Get activities",
@@ -149,7 +153,8 @@
 									"path": [
 										"{{activities}}"
 									]
-								}
+								},
+								"description": "Deve mostrar todas as atividades com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema da Activity."
 							},
 							"response": []
 						},
@@ -196,7 +201,8 @@
 											"value": "10"
 										}
 									]
-								}
+								},
+								"description": "Deve mostrar uma atividade específica com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema da Activity."
 							},
 							"response": []
 						},
@@ -241,11 +247,13 @@
 											"value": "200"
 										}
 									]
-								}
+								},
+								"description": "Não deve encontrar atividade com id inexistente.\n\nResultados esperados:\n\n- Status Code 404 Not Found;\n- \"Not Found\" no body de response."
 							},
 							"response": []
 						}
 					],
+					"description": "Requisições do tipo GET.",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -322,7 +330,8 @@
 											"value": "100"
 										}
 									]
-								}
+								},
+								"description": "Deve alterar uma atividade específica com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema da Activity."
 							},
 							"response": []
 						},
@@ -367,11 +376,13 @@
 											"value": "100"
 										}
 									]
-								}
+								},
+								"description": "Não deve permitir alterar uma atividade sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo PUT."
 				},
 				{
 					"name": "Delete activities",
@@ -417,7 +428,8 @@
 											"value": "15"
 										}
 									]
-								}
+								},
+								"description": "Deve deletar uma atividade específica com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body de response vazio."
 							},
 							"response": []
 						},
@@ -462,13 +474,16 @@
 											"value": "a"
 										}
 									]
-								}
+								},
+								"description": "Não deve deletar atividade com id inválido.\n\nResultados esperados:\n\n- Status Code 400 Bad Request;\n- \"One or more validation errors occurred.\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo DELETE."
 				}
 			],
+			"description": "Activity deve conter os campos:\n\n- id;\n- title;\n- dueDate;\n- completed.",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -549,7 +564,8 @@
 									"path": [
 										"{{authors}}"
 									]
-								}
+								},
+								"description": "Deve criar um novo autor com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Author."
 							},
 							"response": []
 						},
@@ -587,11 +603,13 @@
 									"path": [
 										"{{authors}}"
 									]
-								}
+								},
+								"description": "Não deve permitir criar um novo autor sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo POST."
 				},
 				{
 					"name": "Get authors",
@@ -632,7 +650,8 @@
 									"path": [
 										"{{authors}}"
 									]
-								}
+								},
+								"description": "Deve mostrar todos os autores com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Author."
 							},
 							"response": []
 						},
@@ -682,7 +701,8 @@
 										"{{authors}}",
 										"{{id_author}}"
 									]
-								}
+								},
+								"description": "Deve mostrar um autor específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Author."
 							},
 							"response": []
 						},
@@ -730,7 +750,8 @@
 										"{{authors}}",
 										"{{id_author}}"
 									]
-								}
+								},
+								"description": "Não deve encontrar autor com id inexistente.\n\nResultados esperados:\n\n- Status Code 404 Not Found;\n- \"Not Found\" no body de response."
 							},
 							"response": []
 						},
@@ -782,11 +803,13 @@
 										"books",
 										"{{id_book}}"
 									]
-								}
+								},
+								"description": "Deve mostrar os autores de um livro específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Author."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo GET."
 				},
 				{
 					"name": "Change authors",
@@ -846,7 +869,8 @@
 										"{{authors}}",
 										"{{id_author}}"
 									]
-								}
+								},
+								"description": "Deve alterar um autor específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Author."
 							},
 							"response": []
 						},
@@ -894,11 +918,13 @@
 										"{{authors}}",
 										"{{id_author}}"
 									]
-								}
+								},
+								"description": "Não deve permitir alterar um autor sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo PUT."
 				},
 				{
 					"name": "Delete authors",
@@ -947,7 +973,8 @@
 										"{{authors}}",
 										"{{id_author}}"
 									]
-								}
+								},
+								"description": "Deve deletar um autor específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body de response vazio."
 							},
 							"response": []
 						},
@@ -995,13 +1022,16 @@
 										"{{authors}}",
 										"{{id_author}}"
 									]
-								}
+								},
+								"description": "Não deve deletar autor com id inválido.\n\nResultados esperados:\n\n- Status Code 400 Bad Request;\n- \"One or more validation errors occurred.\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo DELETE."
 				}
 			],
+			"description": "Author deve conter os campos:\n\n- id;\n- idBook;\n- firstName;\n- lastName.",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1083,7 +1113,8 @@
 									"path": [
 										"{{books}}"
 									]
-								}
+								},
+								"description": "Deve criar um novo livro com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Book."
 							},
 							"response": []
 						},
@@ -1121,11 +1152,13 @@
 									"path": [
 										"{{books}}"
 									]
-								}
+								},
+								"description": "Não deve permitir criar um novo livro sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo POST."
 				},
 				{
 					"name": "Get books",
@@ -1166,7 +1199,8 @@
 									"path": [
 										"{{books}}"
 									]
-								}
+								},
+								"description": "Deve mostrar todos os livros com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Book."
 							},
 							"response": []
 						},
@@ -1216,7 +1250,8 @@
 										"{{books}}",
 										"{{id_book}}"
 									]
-								}
+								},
+								"description": "Deve mostrar um livro específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Book."
 							},
 							"response": []
 						},
@@ -1264,11 +1299,13 @@
 										"{{books}}",
 										"{{id_book}}"
 									]
-								}
+								},
+								"description": "Não deve encontrar livro com id inexistente.\n\nResultados esperados:\n\n- Status Code 404 Not Found;\n- \"Not Found\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo GET."
 				},
 				{
 					"name": "Change books",
@@ -1328,7 +1365,8 @@
 										"{{books}}",
 										"{{id_book}}"
 									]
-								}
+								},
+								"description": "Deve alterar um livro específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do Book."
 							},
 							"response": []
 						},
@@ -1376,11 +1414,13 @@
 										"{{books}}",
 										"{{id_book}}"
 									]
-								}
+								},
+								"description": "Não deve permitir alterar um livro sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo PUT."
 				},
 				{
 					"name": "Delete books",
@@ -1396,32 +1436,22 @@
 										],
 										"type": "text/javascript"
 									}
-								}
-							],
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{url_base}}/{{books}}/{{id_book}}",
-									"host": [
-										"{{url_base}}"
-									],
-									"path": [
-										"{{books}}",
-										"{{id_book}}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete a book with invalid id",
-							"event": [
+								},
 								{
-									"listen": "prerequest",
+									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.environment.set(\"id_book\", \"a\");"
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body is correct\", function () {\r",
+											"    pm.response.to.have.body(\"\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1439,13 +1469,65 @@
 										"{{books}}",
 										"{{id_book}}"
 									]
+								},
+								"description": "Deve deletar um livro específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body de response vazio."
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a book with invalid id",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.environment.set(\"id_book\", \"a\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
 								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/{{books}}/{{id_book}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"{{books}}",
+										"{{id_book}}"
+									]
+								},
+								"description": "Não deve deletar livro com id inválido.\n\nResultados esperados:\n\n- Status Code 400 Bad Request;\n- \"One or more validation errors occurred.\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo DELETE."
 				}
 			],
+			"description": "Book deve conter os campos:\n\n- id;\n- title;\n- description;\n- pageCount;\n- excerpt;\n- publishDate.",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1487,6 +1569,29 @@
 					"item": [
 						{
 							"name": "Create a new cover photo",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1507,12 +1612,34 @@
 									"path": [
 										"{{cover_photos}}"
 									]
-								}
+								},
+								"description": "Deve criar uma foto de capa com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do CoverPhoto."
 							},
 							"response": []
 						},
 						{
 							"name": "Create a new cover photo without body",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 415\", function () {\r",
+											"    pm.response.to.have.status(415);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1524,17 +1651,42 @@
 									"path": [
 										"{{cover_photos}}"
 									]
-								}
+								},
+								"description": "Não deve permitir criar uma nova foto de capa sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo POST."
 				},
 				{
 					"name": "Get cover photos",
 					"item": [
 						{
 							"name": "Get all cover photos",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -1546,7 +1698,8 @@
 									"path": [
 										"{{cover_photos}}"
 									]
-								}
+								},
+								"description": "Deve mostrar todas as fotos de capa com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do CoverPhoto."
 							},
 							"response": []
 						},
@@ -1561,32 +1714,24 @@
 										],
 										"type": "text/javascript"
 									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
-									"host": [
-										"{{url_base}}"
-									],
-									"path": [
-										"{{cover_photos}}",
-										"{{id_cover_photo}}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get a nonexistent cover photo",
-							"event": [
+								},
 								{
-									"listen": "prerequest",
+									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.environment.set(\"id_cover_photo\", \"500\");"
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1604,7 +1749,57 @@
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
+								},
+								"description": "Deve mostrar uma foto de capa específica com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do CoverPhoto."
+							},
+							"response": []
+						},
+						{
+							"name": "Get a nonexistent cover photo",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.environment.set(\"id_cover_photo\", \"500\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Not Found\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
 								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"{{cover_photos}}",
+										"{{id_cover_photo}}"
+									]
+								},
+								"description": "Não deve encontrar foto de capa com id inexistente.\n\nResultados esperados:\n\n- Status Code 404 Not Found;\n- \"Not Found\" no body de response."
 							},
 							"response": []
 						},
@@ -1616,6 +1811,27 @@
 									"script": {
 										"exec": [
 											"pm.environment.set(\"id_book\", \"100\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1635,11 +1851,13 @@
 										"covers",
 										"{{id_book}}"
 									]
-								}
+								},
+								"description": "Deve mostrar a foto de capa de um livro específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do CoverPhoto."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo GET."
 				},
 				{
 					"name": "Change cover photos",
@@ -1652,6 +1870,27 @@
 									"script": {
 										"exec": [
 											"pm.environment.set(\"id_cover_photo\", \"1000\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1678,7 +1917,8 @@
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
-								}
+								},
+								"description": "Deve alterar uma foto de capa específica com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do CoverPhoto."
 							},
 							"response": []
 						},
@@ -1690,6 +1930,25 @@
 									"script": {
 										"exec": [
 											"pm.environment.set(\"id_cover_photo\", \"1000\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 415\", function () {\r",
+											"    pm.response.to.have.status(415);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1707,11 +1966,13 @@
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
-								}
+								},
+								"description": "Não deve permitir alterar uma foto de capa sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo PUT."
 				},
 				{
 					"name": "Delete cover photos",
@@ -1727,32 +1988,22 @@
 										],
 										"type": "text/javascript"
 									}
-								}
-							],
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
-									"host": [
-										"{{url_base}}"
-									],
-									"path": [
-										"{{cover_photos}}",
-										"{{id_cover_photo}}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete a cover photo with invalid id",
-							"event": [
+								},
 								{
-									"listen": "prerequest",
+									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.environment.set(\"id_cover_photo\", \"a\");"
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body is correct\", function () {\r",
+											"    pm.response.to.have.body(\"\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1770,11 +2021,90 @@
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
+								},
+								"description": "Deve deletar uma foto de capa específica com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body de response vazio."
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a cover photo with invalid id",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.environment.set(\"id_cover_photo\", \"a\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
 								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"{{cover_photos}}",
+										"{{id_cover_photo}}"
+									]
+								},
+								"description": "Não deve deletar foto de capa com id inválido.\n\nResultados esperados:\n\n- Status Code 400 Bad Request;\n- \"One or more validation errors occurred.\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo DELETE."
+				}
+			],
+			"description": "CoverPhoto deve conter os campos:\n\n- id;\n- idBook;\n- url.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"schema\",",
+							"    {",
+							"    \"id\":\t\"integer($int32)\",",
+							"    \"idBook\":\t\"integer($int32)\",",
+							"    \"url\":\t\"string($uri)\",",
+							"        \"nullable\": true,",
+							"    }",
+							");"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		},
@@ -1786,6 +2116,29 @@
 					"item": [
 						{
 							"name": "Create a new user",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1806,12 +2159,34 @@
 									"path": [
 										"{{users}}"
 									]
-								}
+								},
+								"description": "Deve criar um novo usuário com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do User."
 							},
 							"response": []
 						},
 						{
 							"name": "Create a new user without body",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 415\", function () {\r",
+											"    pm.response.to.have.status(415);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"method": "POST",
 								"header": [],
@@ -1823,17 +2198,42 @@
 									"path": [
 										"{{users}}"
 									]
-								}
+								},
+								"description": "Não deve permitir criar um novo usuário sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo POST."
 				},
 				{
 					"name": "Get users",
 					"item": [
 						{
 							"name": "Get all users",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -1845,7 +2245,8 @@
 									"path": [
 										"{{users}}"
 									]
-								}
+								},
+								"description": "Deve mostrar todos os usuários com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do User."
 							},
 							"response": []
 						},
@@ -1860,32 +2261,24 @@
 										],
 										"type": "text/javascript"
 									}
-								}
-							],
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
-									"host": [
-										"{{url_base}}"
-									],
-									"path": [
-										"{{users}}",
-										"{{id_user}}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get a nonexistent user",
-							"event": [
+								},
 								{
-									"listen": "prerequest",
+									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.environment.set(\"id_user\", \"20\");"
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1903,11 +2296,62 @@
 										"{{users}}",
 										"{{id_user}}"
 									]
+								},
+								"description": "Deve mostrar um usuário específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do User."
+							},
+							"response": []
+						},
+						{
+							"name": "Get a nonexistent user",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.environment.set(\"id_user\", \"20\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Not Found\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
 								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"{{users}}",
+										"{{id_user}}"
+									]
+								},
+								"description": "Não deve encontrar usuário com id inexistente.\n\nResultados esperados:\n\n- Status Code 404 Not Found;\n- \"Not Found\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo GET."
 				},
 				{
 					"name": "Change users",
@@ -1920,6 +2364,27 @@
 									"script": {
 										"exec": [
 											"pm.environment.set(\"id_user\", \"100\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Schema valid\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    var schema = pm.variables.get(\"schema\");\r",
+											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1946,7 +2411,8 @@
 										"{{users}}",
 										"{{id_user}}"
 									]
-								}
+								},
+								"description": "Deve alterar um usuário específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body correspondente ao Schema do User."
 							},
 							"response": []
 						},
@@ -1958,6 +2424,25 @@
 									"script": {
 										"exec": [
 											"pm.environment.set(\"id_user\", \"100\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 415\", function () {\r",
+											"    pm.response.to.have.status(415);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1975,11 +2460,13 @@
 										"{{users}}",
 										"{{id_user}}"
 									]
-								}
+								},
+								"description": "Não deve permitir alterar um usuário sem receber os dados obrigatórios no body de request.\n\nResultados esperados:\n\n- Status Code 415 Unsupported Media Type;\n- \"Unsupported Media Type\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo PUT."
 				},
 				{
 					"name": "Delete users",
@@ -1995,32 +2482,22 @@
 										],
 										"type": "text/javascript"
 									}
-								}
-							],
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
-									"host": [
-										"{{url_base}}"
-									],
-									"path": [
-										"{{users}}",
-										"{{id_user}}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete an user with invalid id",
-							"event": [
+								},
 								{
-									"listen": "prerequest",
+									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.environment.set(\"id_user\", \"a\");"
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body is correct\", function () {\r",
+											"    pm.response.to.have.body(\"\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2038,11 +2515,91 @@
 										"{{users}}",
 										"{{id_user}}"
 									]
+								},
+								"description": "Deve deletar um usuário específico com sucesso.\n\nResultados esperados:\n\n- Status Code 200 OK;\n- Body de response vazio."
+							},
+							"response": []
+						},
+						{
+							"name": "Delete an user with invalid id",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.environment.set(\"id_user\", \"a\");"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
 								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"{{users}}",
+										"{{id_user}}"
+									]
+								},
+								"description": "Não deve deletar usuário com id inválido.\n\nResultados esperados:\n\n- Status Code 400 Bad Request;\n- \"One or more validation errors occurred.\" no body de response."
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Requisições do tipo DELETE."
+				}
+			],
+			"description": "User deve conter os campos:\n\n- id;\n- userName;\n- password.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.environment.set(\"schema\",",
+							"    {",
+							"    \"id\":\t\"integer($int32)\",",
+							"    \"userName\":\t\"string\",",
+							"        \"nullable\": true,",
+							"    \"password\":\t\"string\",",
+							"        \"nullable\": true,",
+							"    }",
+							");"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		}
