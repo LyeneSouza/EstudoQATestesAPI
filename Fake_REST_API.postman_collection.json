@@ -20,19 +20,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -70,17 +58,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -124,19 +102,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -165,19 +131,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -213,17 +167,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Not Found\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -285,19 +229,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -342,17 +274,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -394,17 +316,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body is correct\", function () {\r",
-											"    pm.response.to.have.body(\"\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -440,17 +352,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -526,19 +428,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -576,17 +466,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -621,19 +501,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -671,19 +539,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -722,17 +578,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Not Found\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -771,19 +617,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -830,19 +664,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -890,17 +712,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -945,17 +757,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body is correct\", function () {\r",
-											"    pm.response.to.have.body(\"\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -994,17 +796,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1075,19 +867,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1125,17 +905,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1170,19 +940,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1220,19 +978,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1271,17 +1017,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Not Found\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1326,19 +1062,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1386,17 +1110,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1441,17 +1155,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body is correct\", function () {\r",
-											"    pm.response.to.have.body(\"\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1490,17 +1194,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1574,19 +1268,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1624,17 +1306,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1669,19 +1341,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1719,19 +1379,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1770,17 +1418,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Not Found\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1819,19 +1457,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1878,19 +1504,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1938,17 +1552,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -1993,17 +1597,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body is correct\", function () {\r",
-											"    pm.response.to.have.body(\"\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2042,17 +1636,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2121,19 +1705,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2171,17 +1743,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2216,19 +1778,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2266,19 +1816,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2317,17 +1855,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Not Found\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2372,19 +1900,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Schema valid\", function () {\r",
-											"    var jsonData = pm.response.json();\r",
-											"    var schema = pm.variables.get(\"schema\");\r",
-											"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2432,17 +1948,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 415\", function () {\r",
-											"    pm.response.to.have.status(415);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2487,17 +1993,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body is correct\", function () {\r",
-											"    pm.response.to.have.body(\"\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2536,17 +2032,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Status code name has string\", function () {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"pm.test(\"Body matches string\", function () {\r",
-											"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");\r",
-											"});"
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2619,9 +2105,136 @@
 			"script": {
 				"type": "text/javascript",
 				"exec": [
+					"// Tempo de resposta inferior a 5 segundos",
 					"pm.test(\"Response time is less than 5s\", function () {",
 					"    pm.expect(pm.response.responseTime).to.be.below(5000);",
-					"});"
+					"});",
+					"",
+					"// POST request sem passar o body",
+					"if (pm.request.method == \"POST\" && pm.info.requestName.includes(\"without\")) {",
+					"    pm.test(\"Status code is 415\", function () {",
+					"        pm.response.to.have.status(415);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"Unsupported Media Type\");",
+					"    });",
+					"",
+					"    pm.test(\"Body matches string\", function () {",
+					"        pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");",
+					"    });",
+					"}",
+					"// POST request passando o body corretamente",
+					"else if (pm.request.method == \"POST\") {",
+					"    pm.test(\"Status code is 200\", function () {",
+					"        pm.response.to.have.status(200);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"OK\");",
+					"    });",
+					"",
+					"    pm.test(\"Schema valid\", function () {",
+					"        var jsonData = pm.response.json();",
+					"        var schema = pm.variables.get(\"schema\");",
+					"        pm.expect(tv4.validate(jsonData, schema)).to.be.true;",
+					"    });",
+					"}",
+					"",
+					"// GET request para todos os registros ou para registros especificos",
+					"else if (pm.request.method == \"GET\" && ",
+					"        (pm.info.requestName.includes(\"all\") || pm.info.requestName.includes(\"specific\"))",
+					"    ) {",
+					"    pm.test(\"Status code is 200\", function () {",
+					"        pm.response.to.have.status(200);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"OK\");",
+					"    });",
+					"",
+					"    pm.test(\"Schema valid\", function () {",
+					"        var jsonData = pm.response.json();",
+					"        var schema = pm.variables.get(\"schema\");",
+					"        pm.expect(tv4.validate(jsonData, schema)).to.be.true;",
+					"    });",
+					"}",
+					"// GET request com id inexistente",
+					"else if (pm.request.method == \"GET\" && pm.info.requestName.includes(\"nonexistent\")) {",
+					"    pm.test(\"Status code is 404\", function () {",
+					"        pm.response.to.have.status(404);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"Not Found\");",
+					"    });",
+					"",
+					"    pm.test(\"Body matches string\", function () {",
+					"        pm.expect(pm.response.text()).to.include(\"Not Found\");",
+					"    });",
+					"}",
+					"",
+					"// PUT request sem passar o body",
+					"else if (pm.request.method == \"PUT\" && pm.info.requestName.includes(\"without\")) {",
+					"    pm.test(\"Status code is 415\", function () {",
+					"        pm.response.to.have.status(415);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"Unsupported Media Type\");",
+					"    });",
+					"",
+					"    pm.test(\"Body matches string\", function () {",
+					"        pm.expect(pm.response.text()).to.include(\"Unsupported Media Type\");",
+					"    });",
+					"}",
+					"// PUT request passando o body corretamente",
+					"else if (pm.request.method == \"PUT\") {",
+					"    pm.test(\"Status code is 200\", function () {",
+					"        pm.response.to.have.status(200);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"OK\");",
+					"    });",
+					"",
+					"    pm.test(\"Schema valid\", function () {",
+					"        var jsonData = pm.response.json();",
+					"        var schema = pm.variables.get(\"schema\");",
+					"        pm.expect(tv4.validate(jsonData, schema)).to.be.true;",
+					"    });",
+					"}",
+					"",
+					"// DELETE request com id invalido",
+					"else if (pm.request.method == \"DELETE\" && pm.info.requestName.includes(\"invalid\")) {",
+					"    pm.test(\"Status code is 400\", function () {",
+					"        pm.response.to.have.status(400);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"Bad Request\");",
+					"    });",
+					"",
+					"    pm.test(\"Body matches string\", function () {",
+					"        pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred.\");",
+					"    });",
+					"}",
+					"// DELETE request com sucesso",
+					"else if (pm.request.method == \"DELETE\") {",
+					"    pm.test(\"Status code is 200\", function () {",
+					"        pm.response.to.have.status(200);",
+					"    });",
+					"",
+					"    pm.test(\"Status code name has string\", function () {",
+					"        pm.response.to.have.status(\"OK\");",
+					"    });",
+					"",
+					"    pm.test(\"Body is correct\", function () {",
+					"        pm.response.to.have.body(\"\");",
+					"    });",
+					"}",
+					"",
+					""
 				]
 			}
 		}
