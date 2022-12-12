@@ -39,11 +39,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{activities}}",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}"
 									]
 								},
@@ -68,11 +69,12 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{activities}}",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}"
 									]
 								},
@@ -112,11 +114,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{activities}}",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}"
 									]
 								},
@@ -141,11 +144,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{activities}}/:id",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}/:id",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}",
 										":id"
 									],
@@ -177,11 +181,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{activities}}/:id",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}/:id",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}",
 										":id"
 									],
@@ -248,11 +253,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{activities}}/:id",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}/:id",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}",
 										":id"
 									],
@@ -284,11 +290,12 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{activities}}/:id",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}/:id",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}",
 										":id"
 									],
@@ -326,11 +333,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{activities}}/:id",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}/:id",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}",
 										":id"
 									],
@@ -362,11 +370,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{activities}}/:id",
+									"raw": "{{url_base}}/{{base_path}}/{{activities}}/:id",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{activities}}",
 										":id"
 									],
@@ -447,11 +456,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{authors}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}"
 									]
 								},
@@ -476,11 +486,12 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}"
 									]
 								},
@@ -511,11 +522,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}"
 									]
 								},
@@ -549,11 +561,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}/{{id_author}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}/{{id_author}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}",
 										"{{id_author}}"
 									]
@@ -588,11 +601,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}/{{id_author}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}/{{id_author}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}",
 										"{{id_author}}"
 									]
@@ -627,11 +641,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}/authors/books/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}/authors/books/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}",
 										"authors",
 										"books",
@@ -683,11 +698,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{authors}}/{{id_author}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}/{{id_author}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}",
 										"{{id_author}}"
 									]
@@ -722,11 +738,12 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}/{{id_author}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}/{{id_author}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}",
 										"{{id_author}}"
 									]
@@ -767,11 +784,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}/{{id_author}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}/{{id_author}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}",
 										"{{id_author}}"
 									]
@@ -806,11 +824,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{authors}}/{{id_author}}",
+									"raw": "{{url_base}}/{{base_path}}/{{authors}}/{{id_author}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{authors}}",
 										"{{id_author}}"
 									]
@@ -886,11 +905,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{books}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}"
 									]
 								},
@@ -915,11 +935,12 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{books}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}"
 									]
 								},
@@ -950,11 +971,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{books}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}"
 									]
 								},
@@ -988,11 +1010,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{books}}/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}",
 										"{{id_book}}"
 									]
@@ -1027,11 +1050,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{books}}/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}",
 										"{{id_book}}"
 									]
@@ -1081,11 +1105,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{books}}/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}",
 										"{{id_book}}"
 									]
@@ -1120,11 +1145,12 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{books}}/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}",
 										"{{id_book}}"
 									]
@@ -1165,11 +1191,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{books}}/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}",
 										"{{id_book}}"
 									]
@@ -1204,11 +1231,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{books}}/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{books}}/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{books}}",
 										"{{id_book}}"
 									]
@@ -1287,11 +1315,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}"
 									]
 								},
@@ -1316,11 +1345,12 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}"
 									]
 								},
@@ -1351,11 +1381,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}"
 									]
 								},
@@ -1389,11 +1420,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}/{{id_cover_photo}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
@@ -1428,11 +1460,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}/{{id_cover_photo}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
@@ -1467,11 +1500,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/books/covers/{{id_book}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}/books/covers/{{id_book}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}",
 										"books",
 										"covers",
@@ -1523,11 +1557,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}/{{id_cover_photo}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
@@ -1562,11 +1597,12 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}/{{id_cover_photo}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
@@ -1607,11 +1643,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}/{{id_cover_photo}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
@@ -1646,11 +1683,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{cover_photos}}/{{id_cover_photo}}",
+									"raw": "{{url_base}}/{{base_path}}/{{cover_photos}}/{{id_cover_photo}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{cover_photos}}",
 										"{{id_cover_photo}}"
 									]
@@ -1724,11 +1762,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{users}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}"
 									]
 								},
@@ -1753,11 +1792,12 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{users}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}"
 									]
 								},
@@ -1788,11 +1828,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{users}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}"
 									]
 								},
@@ -1826,11 +1867,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}/{{id_user}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}",
 										"{{id_user}}"
 									]
@@ -1865,11 +1907,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}/{{id_user}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}",
 										"{{id_user}}"
 									]
@@ -1919,11 +1962,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}/{{id_user}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}",
 										"{{id_user}}"
 									]
@@ -1958,11 +2002,12 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}/{{id_user}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}",
 										"{{id_user}}"
 									]
@@ -2003,11 +2048,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}/{{id_user}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}",
 										"{{id_user}}"
 									]
@@ -2042,11 +2088,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{url_base}}/{{users}}/{{id_user}}",
+									"raw": "{{url_base}}/{{base_path}}/{{users}}/{{id_user}}",
 									"host": [
 										"{{url_base}}"
 									],
 									"path": [
+										"{{base_path}}",
 										"{{users}}",
 										"{{id_user}}"
 									]
