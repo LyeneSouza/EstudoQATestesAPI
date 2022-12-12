@@ -1,0 +1,504 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "default": [],
+  "title": "Root Schema",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "id",
+      "idBook",
+      "firstName",
+      "lastName"
+    ],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "The id Schema",
+        "examples": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "idBook": {
+        "type": "integer",
+        "title": "The idBook Schema",
+        "examples": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "firstName": {
+        "type": "string",
+        "title": "The firstName Schema",
+        "examples": [
+          "First Name 1",
+          "First Name 2",
+          "First Name 3",
+          "First Name 4",
+          "First Name 5",
+          "First Name 6",
+          "First Name 7",
+          "First Name 8",
+          "First Name 9",
+          "First Name 10",
+          "First Name 11",
+          "First Name 12",
+          "First Name 13",
+          "First Name 14",
+          "First Name 15",
+          "First Name 16",
+          "First Name 17",
+          "First Name 18",
+          "First Name 19",
+          "First Name 20",
+          "First Name 21",
+          "First Name 22",
+          "First Name 23",
+          "First Name 24",
+          "First Name 25",
+          "First Name 26",
+          "First Name 27",
+          "First Name 28",
+          "First Name 29",
+          "First Name 30"
+        ]
+      },
+      "lastName": {
+        "type": "string",
+        "title": "The lastName Schema",
+        "examples": [
+          "Last Name 1",
+          "Last Name 2",
+          "Last Name 3",
+          "Last Name 4",
+          "Last Name 5",
+          "Last Name 6",
+          "Last Name 7",
+          "Last Name 8",
+          "Last Name 9",
+          "Last Name 10",
+          "Last Name 11",
+          "Last Name 12",
+          "Last Name 13",
+          "Last Name 14",
+          "Last Name 15",
+          "Last Name 16",
+          "Last Name 17",
+          "Last Name 18",
+          "Last Name 19",
+          "Last Name 20",
+          "Last Name 21",
+          "Last Name 22",
+          "Last Name 23",
+          "Last Name 24",
+          "Last Name 25",
+          "Last Name 26",
+          "Last Name 27",
+          "Last Name 28",
+          "Last Name 29",
+          "Last Name 30"
+        ]
+      }
+    },
+    "examples": [{
+      "id": 1,
+      "idBook": 1,
+      "firstName": "First Name 1",
+      "lastName": "Last Name 1"
+    },
+      {
+        "id": 2,
+        "idBook": 1,
+        "firstName": "First Name 2",
+        "lastName": "Last Name 2"
+      },
+      {
+        "id": 3,
+        "idBook": 2,
+        "firstName": "First Name 3",
+        "lastName": "Last Name 3"
+      },
+      {
+        "id": 4,
+        "idBook": 2,
+        "firstName": "First Name 4",
+        "lastName": "Last Name 4"
+      },
+      {
+        "id": 5,
+        "idBook": 2,
+        "firstName": "First Name 5",
+        "lastName": "Last Name 5"
+      },
+      {
+        "id": 6,
+        "idBook": 3,
+        "firstName": "First Name 6",
+        "lastName": "Last Name 6"
+      },
+      {
+        "id": 7,
+        "idBook": 3,
+        "firstName": "First Name 7",
+        "lastName": "Last Name 7"
+      },
+      {
+        "id": 8,
+        "idBook": 3,
+        "firstName": "First Name 8",
+        "lastName": "Last Name 8"
+      },
+      {
+        "id": 9,
+        "idBook": 3,
+        "firstName": "First Name 9",
+        "lastName": "Last Name 9"
+      },
+      {
+        "id": 10,
+        "idBook": 4,
+        "firstName": "First Name 10",
+        "lastName": "Last Name 10"
+      },
+      {
+        "id": 11,
+        "idBook": 4,
+        "firstName": "First Name 11",
+        "lastName": "Last Name 11"
+      },
+      {
+        "id": 12,
+        "idBook": 4,
+        "firstName": "First Name 12",
+        "lastName": "Last Name 12"
+      },
+      {
+        "id": 13,
+        "idBook": 5,
+        "firstName": "First Name 13",
+        "lastName": "Last Name 13"
+      },
+      {
+        "id": 14,
+        "idBook": 5,
+        "firstName": "First Name 14",
+        "lastName": "Last Name 14"
+      },
+      {
+        "id": 15,
+        "idBook": 5,
+        "firstName": "First Name 15",
+        "lastName": "Last Name 15"
+      },
+      {
+        "id": 16,
+        "idBook": 5,
+        "firstName": "First Name 16",
+        "lastName": "Last Name 16"
+      },
+      {
+        "id": 17,
+        "idBook": 6,
+        "firstName": "First Name 17",
+        "lastName": "Last Name 17"
+      },
+      {
+        "id": 18,
+        "idBook": 6,
+        "firstName": "First Name 18",
+        "lastName": "Last Name 18"
+      },
+      {
+        "id": 19,
+        "idBook": 6,
+        "firstName": "First Name 19",
+        "lastName": "Last Name 19"
+      },
+      {
+        "id": 20,
+        "idBook": 6,
+        "firstName": "First Name 20",
+        "lastName": "Last Name 20"
+      },
+      {
+        "id": 21,
+        "idBook": 7,
+        "firstName": "First Name 21",
+        "lastName": "Last Name 21"
+      },
+      {
+        "id": 22,
+        "idBook": 7,
+        "firstName": "First Name 22",
+        "lastName": "Last Name 22"
+      },
+      {
+        "id": 23,
+        "idBook": 7,
+        "firstName": "First Name 23",
+        "lastName": "Last Name 23"
+      },
+      {
+        "id": 24,
+        "idBook": 7,
+        "firstName": "First Name 24",
+        "lastName": "Last Name 24"
+      },
+      {
+        "id": 25,
+        "idBook": 8,
+        "firstName": "First Name 25",
+        "lastName": "Last Name 25"
+      },
+      {
+        "id": 26,
+        "idBook": 8,
+        "firstName": "First Name 26",
+        "lastName": "Last Name 26"
+      },
+      {
+        "id": 27,
+        "idBook": 8,
+        "firstName": "First Name 27",
+        "lastName": "Last Name 27"
+      },
+      {
+        "id": 28,
+        "idBook": 9,
+        "firstName": "First Name 28",
+        "lastName": "Last Name 28"
+      },
+      {
+        "id": 29,
+        "idBook": 9,
+        "firstName": "First Name 29",
+        "lastName": "Last Name 29"
+      },
+      {
+        "id": 30,
+        "idBook": 9,
+        "firstName": "First Name 30",
+        "lastName": "Last Name 30"
+      }]
+  },
+  "examples": [
+    [{
+      "id": 1,
+      "idBook": 1,
+      "firstName": "First Name 1",
+      "lastName": "Last Name 1"
+    },
+      {
+        "id": 2,
+        "idBook": 1,
+        "firstName": "First Name 2",
+        "lastName": "Last Name 2"
+      },
+      {
+        "id": 3,
+        "idBook": 2,
+        "firstName": "First Name 3",
+        "lastName": "Last Name 3"
+      },
+      {
+        "id": 4,
+        "idBook": 2,
+        "firstName": "First Name 4",
+        "lastName": "Last Name 4"
+      },
+      {
+        "id": 5,
+        "idBook": 2,
+        "firstName": "First Name 5",
+        "lastName": "Last Name 5"
+      },
+      {
+        "id": 6,
+        "idBook": 3,
+        "firstName": "First Name 6",
+        "lastName": "Last Name 6"
+      },
+      {
+        "id": 7,
+        "idBook": 3,
+        "firstName": "First Name 7",
+        "lastName": "Last Name 7"
+      },
+      {
+        "id": 8,
+        "idBook": 3,
+        "firstName": "First Name 8",
+        "lastName": "Last Name 8"
+      },
+      {
+        "id": 9,
+        "idBook": 3,
+        "firstName": "First Name 9",
+        "lastName": "Last Name 9"
+      },
+      {
+        "id": 10,
+        "idBook": 4,
+        "firstName": "First Name 10",
+        "lastName": "Last Name 10"
+      },
+      {
+        "id": 11,
+        "idBook": 4,
+        "firstName": "First Name 11",
+        "lastName": "Last Name 11"
+      },
+      {
+        "id": 12,
+        "idBook": 4,
+        "firstName": "First Name 12",
+        "lastName": "Last Name 12"
+      },
+      {
+        "id": 13,
+        "idBook": 5,
+        "firstName": "First Name 13",
+        "lastName": "Last Name 13"
+      },
+      {
+        "id": 14,
+        "idBook": 5,
+        "firstName": "First Name 14",
+        "lastName": "Last Name 14"
+      },
+      {
+        "id": 15,
+        "idBook": 5,
+        "firstName": "First Name 15",
+        "lastName": "Last Name 15"
+      },
+      {
+        "id": 16,
+        "idBook": 5,
+        "firstName": "First Name 16",
+        "lastName": "Last Name 16"
+      },
+      {
+        "id": 17,
+        "idBook": 6,
+        "firstName": "First Name 17",
+        "lastName": "Last Name 17"
+      },
+      {
+        "id": 18,
+        "idBook": 6,
+        "firstName": "First Name 18",
+        "lastName": "Last Name 18"
+      },
+      {
+        "id": 19,
+        "idBook": 6,
+        "firstName": "First Name 19",
+        "lastName": "Last Name 19"
+      },
+      {
+        "id": 20,
+        "idBook": 6,
+        "firstName": "First Name 20",
+        "lastName": "Last Name 20"
+      },
+      {
+        "id": 21,
+        "idBook": 7,
+        "firstName": "First Name 21",
+        "lastName": "Last Name 21"
+      },
+      {
+        "id": 22,
+        "idBook": 7,
+        "firstName": "First Name 22",
+        "lastName": "Last Name 22"
+      },
+      {
+        "id": 23,
+        "idBook": 7,
+        "firstName": "First Name 23",
+        "lastName": "Last Name 23"
+      },
+      {
+        "id": 24,
+        "idBook": 7,
+        "firstName": "First Name 24",
+        "lastName": "Last Name 24"
+      },
+      {
+        "id": 25,
+        "idBook": 8,
+        "firstName": "First Name 25",
+        "lastName": "Last Name 25"
+      },
+      {
+        "id": 26,
+        "idBook": 8,
+        "firstName": "First Name 26",
+        "lastName": "Last Name 26"
+      },
+      {
+        "id": 27,
+        "idBook": 8,
+        "firstName": "First Name 27",
+        "lastName": "Last Name 27"
+      },
+      {
+        "id": 28,
+        "idBook": 9,
+        "firstName": "First Name 28",
+        "lastName": "Last Name 28"
+      },
+      {
+        "id": 29,
+        "idBook": 9,
+        "firstName": "First Name 29",
+        "lastName": "Last Name 29"
+      },
+      {
+        "id": 30,
+        "idBook": 9,
+        "firstName": "First Name 30",
+        "lastName": "Last Name 30"
+      }]
+  ]
+}

@@ -48,7 +48,6 @@ public class APITestActivities extends BaseTest {
             .get("/Activities")
         .then()
             .statusCode(200)
-            .body("$", hasSize(30))
             .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("activity.json"))
         ;
     }
