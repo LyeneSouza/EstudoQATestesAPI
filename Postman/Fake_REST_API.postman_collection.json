@@ -152,7 +152,10 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(10);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -605,7 +608,10 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(10);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1100,7 +1106,10 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(10);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1551,7 +1560,10 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(10);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2024,7 +2036,10 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(5);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
