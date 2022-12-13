@@ -20,7 +20,25 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(100);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Title valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.title).to.eql(\"New Activity\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Due date valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.dueDate).to.eql(\"2022-12-08T12:10:53.777Z\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Completed valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.completed).to.eql(true);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -234,7 +252,25 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(100);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Title valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.title).to.eql(\"Activity Changed\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Due date valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.dueDate).to.eql(\"2022-12-08T12:10:53.777Z\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Completed valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.completed).to.eql(true);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -437,7 +473,25 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Id book valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.idBook).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"First name valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.firstName).to.eql(\"Name New Author\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Last name valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.lastName).to.eql(\"Last Name New Author\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -679,7 +733,25 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Id book valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.idBook).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"First name valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.firstName).to.eql(\"Name Author Changed\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Last name valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.lastName).to.eql(\"Last Name Author Changed\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -886,7 +958,35 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(500);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Title valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.title).to.eql(\"New Title\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Description valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.description).to.eql(\"New Description\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Page count valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.pageCount).to.eql(500);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Excerpt valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.excerpt).to.eql(\"An excerpt\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Publish date valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.publishDate).to.eql(\"2022-12-08T13:45:14.785Z\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1086,7 +1186,35 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(500);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Title valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.title).to.eql(\"Title Changed\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Description valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.description).to.eql(\"Description Changed\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Page count valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.pageCount).to.eql(500);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Excerpt valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.excerpt).to.eql(\"An excerpt changed\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Publish date valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.publishDate).to.eql(\"2022-12-08T13:45:14.785Z\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1296,7 +1424,20 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Id book valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.idBook).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Url valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.url).to.eql(\"New url\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1538,7 +1679,20 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Id book valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.idBook).to.eql(1000);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Url valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.url).to.eql(\"Url Changed\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1743,7 +1897,20 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(100);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"User name valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.userName).to.eql(\"New User\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Password valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.password).to.eql(\"New Password\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1943,7 +2110,20 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											""
+											"pm.test(\"Id valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.id).to.eql(100);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"User name valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.userName).to.eql(\"User Changed\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Password valid\", function () {\r",
+											"    var jsonData = JSON.parse(responseBody);\r",
+											"    pm.expect(jsonData.password).to.eql(\"Password Changed\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
