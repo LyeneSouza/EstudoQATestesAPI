@@ -5,6 +5,9 @@ Automação de testes de API Rest.
 ### Desafio ###
 
 Trata-se de dois projetos que contemplam testes da API "Fake Rest API".
+```shell
+https://fakerestapi.azurewebsites.net/index.html
+```
 
 ### Descrição ###
 
@@ -35,3 +38,8 @@ cd desafio-qa-modulo3/Postman/
 ```shell
 newman run Fake_REST_API.postman_collection.json -e Testes.postman_environment.json -r htmlextra --reporter-htmlextra-title "Fake REST API"
 ```
+
+### Observações acerca do projeto Postman ###
+Para passar os parâmetros esperados nas requisições, foram utilizadas variáveis de ambiente com seus valores setados no pre-request, pois cada requisição precisava trabalhar com um valor específico, que atendesse seu cenário. 
+
+Destaca-se que, nas requisições da pasta "Activities", os parâmetros foram mantidos fixos, tendo seus valores definidos na aba de Params, apenas para demonstrar outro modo possível de passar o id para a requisição.
