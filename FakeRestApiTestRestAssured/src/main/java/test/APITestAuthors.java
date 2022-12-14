@@ -5,6 +5,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import test.models.Author;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
